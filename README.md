@@ -84,6 +84,7 @@ DevWatch translates raw metrics into engineering questions:
 
 ### Operational Workflow
 
+
 ```
 GitHub Activity Data
       │
@@ -232,6 +233,9 @@ The core deterministic analysis works independently of AWS Bedrock.
 ---
 
 ## How It Works
+<p align="center">
+  <img src="assets/devwatch-flow.png" alt="flowwork" width="900">
+</p>
 
 ```
 User CLI Invocation
@@ -312,7 +316,12 @@ flowchart TD
 
 ---
 
-## Example Analysis
+## Example Analysis && Terminal Outputs
+<p align="center">
+  <img src="assets/result1.png" alt="DevWatch" width="900">
+  <img src="assets/result2.png" alt="DevWatch" width="900">
+  <img src="assets/aws-nova.png" alt="DevWatch" width="900">
+</p>
 
 Below is an example analysis output generated from a snapshot run on `outline/outline`:
 
