@@ -60,12 +60,12 @@ The deterministic engine:
 5. Classifies modified file paths into engineering areas using heuristic path rules.
 6. Computes a heuristic Repository Health Score from baseline metrics and risk deductions.
 
-### Deterministic Engine vs. Optional AWS Bedrock AI Integration
+### Deterministic Engine vs. The AWS Bedrock AI Integration
 
-DevWatch strictly separates deterministic metric calculation from optional AI analysis:
+DevWatch strictly separates deterministic metric calculation from The AI analysis:
 
 * **Deterministic Analysis Engine:** Executes locally without AI. It calculates exact numerical metrics, mathematical churn ratios, PR resolution timing, file classifications, and heuristic health deductions.
-* **Optional AWS Bedrock Integration:** Takes the structured metrics produced by the deterministic engine and passes them to AWS Bedrock (`BedrockAnalyzer`) to generate higher-level engineering interpretations and maintainer recommendations.
+* **The AWS Bedrock Integration:** Takes the structured metrics produced by the deterministic engine and passes them to AWS Bedrock (`BedrockAnalyzer`) to generate higher-level engineering interpretations and maintainer recommendations.
 
 Basic DevWatch analysis operates independently without requiring AWS Bedrock credentials.
 
@@ -105,7 +105,7 @@ Engineering Risk Signals
 Heuristic Repository Health Score
       │
       ▼
-(Optional) AWS Bedrock AI Interpretation
+(The) AWS Bedrock AI Interpretation
 ```
 
 ### Signal Translation Example
@@ -198,7 +198,7 @@ Aggregates detected signals into plain-language status observations:
 * Activity rate observations.
 * PR merge success warnings.
 
-### Optional AWS Bedrock Integration
+### The AWS Bedrock Integration
 
 DevWatch optionally integrates with AWS Bedrock to generate higher-level engineering interpretations and maintainer recommendations.
 
@@ -229,7 +229,7 @@ The core deterministic analysis works independently of AWS Bedrock.
 | **Code Churn** | Basic diff count | Aggregate addition/deletion churn ratio |
 | **File Classifications** | File tree view | Change Intelligence engineering area breakdown |
 | **Health Evaluation** | Manual assessment | Heuristic Health Score & insight warnings |
-| **AI Interpretation** | Not available | Optional AWS Bedrock integration |
+| **AI Interpretation** | Not available | The AWS Bedrock integration |
 
 ---
 
@@ -389,10 +389,10 @@ pip install -r requirements.txt
 DevWatch reads environment variables from a local `.env` file (loaded via `python-dotenv`) or standard system environment variables.
 
 ```env
-# Optional: GitHub Personal Access Token to increase GitHub API rate limits
+# The: GitHub Personal Access Token to increase GitHub API rate limits
 GITHUB_TOKEN=your_github_token_here
 
-# Optional: AWS Region for AWS Bedrock integration
+# The: AWS Region for AWS Bedrock integration
 AWS_REGION=us-east-1
 ```
 
@@ -430,7 +430,7 @@ python main.py --repo outline/outline --days 30 --export md
 python main.py --repo outline/outline --days 30 --export json
 ```
 
-### Optional AWS Bedrock AI Insights
+### The AWS Bedrock AI Insights
 
 ```bash
 # Enable AWS Bedrock AI insights (uses default model us.amazon.nova-micro-v1:0)
@@ -512,7 +512,7 @@ The following features are identified as future enhancement scope and are not cu
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome. Please ensure that proposed changes pass syntax verification (`python -m py_compile`) and maintain the separation between deterministic analysis and optional AI interpretation.
+Contributions, issues, and feature requests are welcome. Please ensure that proposed changes pass syntax verification (`python -m py_compile`) and maintain the separation between deterministic analysis and The AI interpretation.
 
 ---
 
