@@ -48,6 +48,7 @@ GitHub provides the underlying activity data, while DevWatch organizes that data
 ---
 
 ## Solution
+<img src="assets/aws-nova.png" alt="DevWatch" width="900">
 
 DevWatch connects to the GitHub REST API, retrieves recent repository activity, and processes the raw payloads through a deterministic analysis engine (`RepoAnalyzer`).
 
@@ -234,7 +235,7 @@ The core deterministic analysis works independently of AWS Bedrock.
 
 ## How It Works
 <p align="center">
-  <img src="assets/devwatch-flow.png" alt="flowwork" width="900">
+  <img src="assets/devwatch_flow.png" alt="flowwork" width="900">
 </p>
 
 ```
@@ -320,7 +321,6 @@ flowchart TD
 <p align="center">
   <img src="assets/result1.png" alt="DevWatch" width="900">
   <img src="assets/result2.png" alt="DevWatch" width="900">
-  <img src="assets/aws-nova.png" alt="DevWatch" width="900">
 </p>
 
 Below is an example analysis output generated from a snapshot run on `outline/outline`:
