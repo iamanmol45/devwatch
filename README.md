@@ -1,6 +1,15 @@
 # DevWatch
 
 GitHub Engineering Intelligence CLI
+<p align="center">
+  <img src="assets/devwatch-banner.png" alt="DevWatch" width="900">
+</p>
+
+<h1 align="center">DevWatch</h1>
+
+<p align="center">
+  Engineering intelligence for GitHub repositories.
+</p>
 
 ## Overview
 
