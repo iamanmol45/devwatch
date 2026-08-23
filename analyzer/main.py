@@ -78,24 +78,9 @@ for path in [
 # Imports
 # ---------------------------------------------------------
 
-try:
-    from devwatch.analyzer.github import GitHubClient
-    from devwatch.analyzer.analyzer import RepoAnalyzer
-    from devwatch.analyzer.bedrock import BedrockAnalyzer
-
-except ImportError:
-
-    try:
-        from analyzer.github import GitHubClient
-        from analyzer.analyzer import RepoAnalyzer
-        from analyzer.bedrock import BedrockAnalyzer
-
-    except ImportError:
-
-        from github import GitHubClient
-        from analyzer import RepoAnalyzer
-        from bedrock import BedrockAnalyzer
-
+from github import GitHubClient
+from analyzer import RepoAnalyzer
+from bedrock import BedrockAnalyzer
 
 # =========================================================
 # CLI DISPLAY
