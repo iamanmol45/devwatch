@@ -9,6 +9,15 @@ DevWatch is a developer-focused GitHub repository intelligence CLI tool that ana
 GitHub generates significant amounts of development activity data. DevWatch aggregates this raw activity and converts it into structured engineering signals for developers, maintainers, and technical reviewers.
 
 DevWatch is designed as an engineering intelligence tool rather than a standard GitHub activity counter. It focuses on translating scalar activity numbers into actionable risk and health indicators.
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-Bedrock-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-API-181717?style=for-the-badge&logo=github&logoColor=white)
+![Rich](https://img.shields.io/badge/Rich-CLI-000000?style=for-the-badge)
+![MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
+</p>
 
 ---
 
