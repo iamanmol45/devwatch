@@ -48,7 +48,7 @@ GitHub provides the underlying activity data, while DevWatch organizes that data
 ---
 
 ## Solution
-<img src="assets/aws_nova.png" alt="DevWatch" width="900">
+<img src="assets/aws_nova.png" alt="DevWatch" width="500">
 
 DevWatch connects to the GitHub REST API, retrieves recent repository activity, and processes the raw payloads through a deterministic analysis engine (`RepoAnalyzer`).
 
