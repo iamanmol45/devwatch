@@ -6,7 +6,7 @@ Calculates contributor stats, commit velocity, code churn, PR latency, file chan
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional
-from devwatch.analyzer.github import GitHubClient
+from github import GitHubClient
 
 
 class RepoAnalyzer:
